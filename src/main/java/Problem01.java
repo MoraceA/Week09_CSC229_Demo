@@ -27,6 +27,7 @@ public class Problem01 {
          System.out.print(" \n x= "+x +" y= "+y);
     
     }
+    //The time complexity is O(2logn^2)//
     
     public static void func2(int n){
         int k,j,i=n;
@@ -44,8 +45,11 @@ public class Problem01 {
         }
        
     }
+    //The time complexity is O(log(n) log(n))//
     
    // also discuss T(n) = 3 T(n/4) + n
+    // = θ (n^1.2)//
+ 
     
     
 }

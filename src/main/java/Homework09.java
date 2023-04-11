@@ -31,4 +31,28 @@ What is the value of the first triangle number to have over one hundred divisors
     */
     
     
+ 
+    public static long triangleNumberDivisor(int n) {
+int count = 0;
+long triNum = 0;
+for (int i = 1; count <= n; i++) {
+triNum += i;
+count = 0;
+for (int c = 1; c <= Math.sqrt(triNum); c++) {
+if (triNum % c == 0) {
+count += 2;
 }
+}
+
+if (Math.sqrt(triNum) * Math.sqrt(triNum) == triNum) {
+count--;
+}
+}
+return triNum;
+}
+    
+}
+
+
+
+
